@@ -1,0 +1,49 @@
+:root{
+    box-sizing: border-box;
+}
+*,
+::before,
+::after{
+    box-sizing: inherit;
+}
+body{
+    background-color: purple;
+    color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+}
+.container{
+    box-shadow: 0 2px 5px white;
+    padding: 20px 40px;
+}
+input{
+    width: 100%;
+    padding: 10px;
+}
+input::placeholder{
+    font-size: 20px;
+}
+input:focus{
+    outline: none;
+    border: 3px solid rgb(75, 7, 75);
+}
+button{
+    background-color: rgb(75, 7, 75);
+    color: white;
+    cursor: pointer;
+    padding: 10px 40px;
+    margin-top: 20px;
+    border: none;
+}
+button:focus{
+    border: 2px solid white;
+}
+#result{
+    margin-top: 20px;
+    font-size: 18px;
+}
